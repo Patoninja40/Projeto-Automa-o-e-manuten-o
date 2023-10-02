@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#titulo{
+
+font-family: sans-serif;
+color: black;
+margin-left: 7%;
+
+
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+
+input,select,textarea,button{
+    border-radius: 5px;
+
+
+
+}
+    
+    .campo{
+        margin-bottom: 1em;
+    }
+    
+    .campo label{
+        margin-bottom: 0.2em;
+        display: block;
+    }
+    
+    fieldset .campo .grupo { float: left;
+        margin-right: 1em;
+
+    }
+
+    .campo input[type="text"],.campo input[type="email" ],{
+        padding: 0.2em;
+        border:1px solid;
+        box-shadow:2px 2px 2px ;
+        display  :block ;
+    }
+
+    .campo input:focus,.campo select:focus, {
+
+    }
+
+
+    .botao{
+        font-size: 1.2em;
+        border:0;
+        margin-bottom:1em ;
+        padding:0.2em 0.6em ;
+        box-shadow: 2px 2px 2px ;
+        text-shadow: 1px 1px 1px ;
+        position:absolute;
+        top:255px;
+        left:90%;
+        margin-left:-50% ;
+        transform: translate(-50% ,-50%);
+    }
+
+    .botao :hover{
+        background:#ccbbff ;
+        box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+        text-shadow: none;
+    }
+    </style>
+</head>
+<body>
+    <!--campo do cadastro-->
+    <div>
+        <h2 id="titulo">Cadastra-se e saiba mais !</h2>
+    </div>
+    <form>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome:</strong></label>
+                <input type="text" name="nome:" id="name:" required>
+            </div>
+            
+
+            <div class="campo">
+                <label for="email">
+                   <strong>   email:  </strong>
+                </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="senha">
+                      <strong>     Senha: </strong>
+                </label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <button class="botao"       type="submit" onclick="alert('Hello world!')">Proximo </button>
+        </fieldset>
+        
+    </form>
+
+
+
+</body>
+</html>
